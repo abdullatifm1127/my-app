@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 const produk = () => {
     const [isLogin, setIsLogin] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
-    const {router} = useRouter();
+    const router = useRouter();
 
     useEffect(() => {
         const status = localStorage.getItem("isLogin");
